@@ -2,7 +2,7 @@
 
 **REQUIREMENTS:**
 
-**Autocrat** add-on (installed on KissickLab Drive Account)
+**Autocrat** add-on
 
 **Templates** available under directory **/Rafi\_Lab\_Label\_Printer/Templates [DO NOT MODIFY]/**
 
