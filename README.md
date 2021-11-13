@@ -87,12 +87,15 @@ On your Google Sheets data, launch **Autocrat** under **Extensions** dropdown me
 **Export this Docs to PDF to print.**
 
 ![](source/pic.018.png)
+
+
 -----
+# QR CODE GENERATING
 **QR CODE LINK FOR LABEL (REQUIRED):**
 
 Create the last column named **QR CODE LINK**.  The formula below generates a link to **QR CODE** for each patient, where **PATIENT-CODE** is the patient's unique code (cell position).
 
-=HYPERLINK("https://api.qrserver.com/v1/create-qr-code/?size=1000x1000&data="&ENCODEURL(**PATIENT-CODE**))
+>=HYPERLINK("https://api.qrserver.com/v1/create-qr-code/?size=1000x1000&data="&ENCODEURL(**PATIENT-CODE**))
 
 Example:
 
@@ -104,7 +107,7 @@ Example:
 
 Create a column named **QR CODE IMAGE**.  The formula below generates a **QR CODE** image embedded in a cell, where **PATIENT-CODE** is the patient's unique code (cell position).
 
-=image("https://api.qrserver.com/v1/create-qr-code/?size=500x500&data="&ENCODEURL(**PATIENT-CODE**))
+>=image("https://api.qrserver.com/v1/create-qr-code/?size=500x500&data="&ENCODEURL(**PATIENT-CODE**))
 
 Example:
 
