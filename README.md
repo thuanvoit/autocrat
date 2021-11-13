@@ -1,4 +1,4 @@
-# HOW TO AUTOCRAT
+# HOW TO AUTOCRAT SHEETS AND DOCS
 
 **REQUIREMENTS:**
 
@@ -36,7 +36,7 @@ On your Google Sheets data, launch **Autocrat** under **Extensions** dropdown me
 
 ![](source/pic.007.png)
 
-> Search template named **1.5x0.5 Thermal Label Template v2** and select it.
+> Search template named **"1.5x0.5 Thermal Label Template v2"** and select it.
 
 ![](source/pic.008.png)
 
@@ -87,3 +87,29 @@ On your Google Sheets data, launch **Autocrat** under **Extensions** dropdown me
 **Export this Docs to PDF to print.**
 
 ![](source/pic.018.png)
+-----
+**QR CODE LINK FOR LABEL (REQUIRED):**
+
+Create the last column named **QR CODE LINK**.  The formula below generates a link to **QR CODE** for each patient, where **PATIENT-CODE** is the patient's unique code (cell position).
+
+=HYPERLINK("https://api.qrserver.com/v1/create-qr-code/?size=1000x1000&data="&ENCODEURL(**PATIENT-CODE**))
+
+Example:
+
+![](>qr_gen.001.png)
+
+
+-----
+**QR CODE IMAGE (OPTIONAL):**
+
+Create a column named **QR CODE IMAGE**.  The formula below generates a **QR CODE** image embedded in a cell, where **PATIENT-CODE** is the patient's unique code (cell position).
+
+=image("https://api.qrserver.com/v1/create-qr-code/?size=500x500&data="&ENCODEURL(**PATIENT-CODE**))
+
+Example:
+
+![](source/qr_gen.002.png)
+
+Result: 
+
+![](source/qr_gen.003.png)
