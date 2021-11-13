@@ -32,7 +32,7 @@ On your Google Sheets data, launch **Autocrat** under **Extensions** dropdown me
 
 **STEP 2:**
 
-> Click ![](source/pic.004.png) on the job if you have the same Sheets layout and Docs template. Click on ![](source/pic.005.png)** to create a new job.  Name your job and click ![](source/pic.006.png) to the next step.
+> Click ![](source/pic.004.png) on the job if you have the same Sheets layout and Docs template. Click on ![](source/pic.005.png) to create a new job.  Name your job and click ![](source/pic.006.png) to the next step.
 
 ![](source/pic.007.png)
 
